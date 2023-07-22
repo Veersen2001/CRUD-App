@@ -9,8 +9,9 @@ const userSchema = new mongoose.Schema({
     },
     email:{
         type:String,
-        required:[true,"email is Required"],
+        required:[true,'email is Required'],
         unique:true
     }
 })
 module.exports = mongoose.model("User",userSchema);
+// here "User"define Shema name of databse

@@ -25,7 +25,9 @@ connectToDB()
 
 const userRoutes = require('./routes/userRoutes.js')
 
-app.get('/',userRoutes);
+
+// when use al methods=>get,post
+app.use('/',userRoutes);
 
 
 module.exports = app;
